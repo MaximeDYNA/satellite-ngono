@@ -7,7 +7,7 @@ var topbarComponent = "<!-- Topbar Start -->\n" +
     "        <div class=\"col-lg-7 px-5 text-start\">\n" +
     "            <div class=\"h-100 d-inline-flex align-items-center py-3 me-4\">\n" +
     "                <small class=\"fa fa-map-marker-alt text-primary me-2\"></small>\n" +
-    "                <small>Zone Portuaire - Face Pharmacam, Douala, Cameroun</small>\n" +
+    "                <small>Direction Générale : Zone Portuaire - Face Pharmacam, Douala, Cameroun</small>\n" +
     "            </div>\n" +
     "            <div class=\"h-100 d-inline-flex align-items-center py-3\">\n" +
     "                <small class=\"far fa-clock text-primary me-2\"></small>\n" +
@@ -17,7 +17,7 @@ var topbarComponent = "<!-- Topbar Start -->\n" +
     "        <div class=\"col-lg-5 px-5 text-end\">\n" +
     "            <div class=\"h-100 d-inline-flex align-items-center py-3 me-4\">\n" +
     "                <small class=\"fa fa-phone-alt text-primary me-2\"></small>\n" +
-    "                <small>+012 345 6789</small>\n" +
+    "                <small>+237 657 333 381</small>\n" +
     "            </div>\n" +
     "            <div class=\"h-100 d-inline-flex align-items-center\">\n" +
     "                <a class=\"btn btn-sm-square bg-white text-primary me-1\" href=\"\"><i class=\"fab fa-facebook-f\"></i></a>\n" +
@@ -39,7 +39,8 @@ topbar.insertAdjacentHTML("afterbegin",topbarComponent);
 var navbarComponent = "    <!-- Navbar Start -->\n" +
     "    <nav class=\"navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0\">\n" +
     "        <a href=\"index.html\" class=\"navbar-brand d-flex align-items-center px-4 px-lg-5\">\n" +
-    "            <h2 class=\"m-0 text-primary\"><i class=\"fa fa-car me-3\"></i>CarServ</h2>\n" +
+    "           <img id='logo' src=\"../img/logo-sn.jpeg\" class=\"img-fluid\" alt=\"logo\">\n" +
+    /*"            <h2 class=\"m-0 text-primary\"><i class=\"fa fa-car me-3\"></i>CarServ</h2>\n" +*/
     "        </a>\n" +
     "        <button type=\"button\" class=\"navbar-toggler me-4\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarCollapse\">\n" +
     "            <span class=\"navbar-toggler-icon\"></span>\n" +
@@ -83,10 +84,10 @@ var footerComponent = "" +
     "        <div class=\"container py-5\">\n" +
     "            <div class=\"row g-5\">\n" +
     "                <div class=\"col-lg-3 col-md-6\">\n" +
-    "                    <h4 class=\"text-light mb-4\">Address</h4>\n" +
-    "                    <p class=\"mb-2\"><i class=\"fa fa-map-marker-alt me-3\"></i>123 Street, New York, USA</p>\n" +
-    "                    <p class=\"mb-2\"><i class=\"fa fa-phone-alt me-3\"></i>+012 345 67890</p>\n" +
-    "                    <p class=\"mb-2\"><i class=\"fa fa-envelope me-3\"></i>info@example.com</p>\n" +
+    "                    <h4 class=\"text-light mb-4\">Adresse</h4>\n" +
+    "                    <p class=\"mb-2\"><i class=\"fa fa-map-marker-alt me-3\"></i>Zone Portuaire - Face Pharmacam, Douala, Cameroun</p>\n" +
+    "                    <p class=\"mb-2\"><i class=\"fa fa-phone-alt me-3\"></i>+237 657 333 381</p>\n" +
+    "                    <p class=\"mb-2\"><i class=\"fa fa-envelope me-3\"></i>contact@satellite-ngono.com</p>\n" +
     "                    <div class=\"d-flex pt-2\">\n" +
     "                        <a class=\"btn btn-outline-light btn-social\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\n" +
     "                        <a class=\"btn btn-outline-light btn-social\" href=\"\"><i class=\"fab fa-facebook-f\"></i></a>\n" +
@@ -95,11 +96,11 @@ var footerComponent = "" +
     "                    </div>\n" +
     "                </div>\n" +
     "                <div class=\"col-lg-3 col-md-6\">\n" +
-    "                    <h4 class=\"text-light mb-4\">Opening Hours</h4>\n" +
-    "                    <h6 class=\"text-light\">Monday - Friday:</h6>\n" +
-    "                    <p class=\"mb-4\">09.00 AM - 09.00 PM</p>\n" +
-    "                    <h6 class=\"text-light\">Saturday - Sunday:</h6>\n" +
-    "                    <p class=\"mb-0\">09.00 AM - 12.00 PM</p>\n" +
+    "                    <h4 class=\"text-light mb-4\">Horaires d'ouverture</h4>\n" +
+    "                    <h6 class=\"text-light\">Lundi - Vendredi:</h6>\n" +
+    "                    <p class=\"mb-4\">08H00 - 17H30</p>\n" +
+    "                    <h6 class=\"text-light\">Samedi:</h6>\n" +
+    "                    <p class=\"mb-0\">08H00 - 12H00</p>\n" +
     "                </div>\n" +
     "                <div class=\"col-lg-3 col-md-6\">\n" +
     "                    <h4 class=\"text-light mb-4\">Services</h4>\n" +
@@ -111,10 +112,10 @@ var footerComponent = "" +
     "                </div>\n" +
     "                <div class=\"col-lg-3 col-md-6\">\n" +
     "                    <h4 class=\"text-light mb-4\">Newsletter</h4>\n" +
-    "                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>\n" +
+    "                    <p>Retrouvez toutes les informations nous concernant ici!</p>\n" +
     "                    <div class=\"position-relative mx-auto\" style=\"max-width: 400px;\">\n" +
-    "                        <input class=\"form-control border-0 w-100 py-3 ps-4 pe-5\" type=\"text\" placeholder=\"Your email\">\n" +
-    "                        <button type=\"button\" class=\"btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2\">SignUp</button>\n" +
+    "                        <input class=\"form-control border-0 w-100 py-3 ps-4 pe-5\" type=\"text\" placeholder=\"Votre email\">\n" +
+    "                        <button type=\"button\" class=\"btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2\">Envoyer</button>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
@@ -123,14 +124,14 @@ var footerComponent = "" +
     "            <div class=\"copyright\">\n" +
     "                <div class=\"row\">\n" +
     "                    <div class=\"col-md-6 text-center text-md-start mb-3 mb-md-0\">\n" +
-    "                        &copy; <a class=\"border-bottom\" href=\"#\">Your Site Name</a>, All Right Reserved.\n" +
+    "                        &copy; <a class=\"border-bottom\" href=\"#\">SATELLITE NGONO</a>, All Right Reserved.\n" +
     "\n" +
     "                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from \"https://htmlcodex.com/credit-removal\". Thank you for your support. ***/-->\n" +
-    "                        Designed By <a class=\"border-bottom\" href=\"https://htmlcodex.com\">HTML Codex</a>\n" +
+    "                        Designed By <a class=\"border-bottom\" href=\"https://agency.talk-adk.com\">TALK-ADK</a>\n" +
     "                    </div>\n" +
     "                    <div class=\"col-md-6 text-center text-md-end\">\n" +
     "                        <div class=\"footer-menu\">\n" +
-    "                            <a href=\"\">Home</a>\n" +
+    "                            <a href=\"\">Accueil</a>\n" +
     "                            <a href=\"\">Cookies</a>\n" +
     "                            <a href=\"\">Help</a>\n" +
     "                            <a href=\"\">FQAs</a>\n" +
@@ -143,3 +144,7 @@ var footerComponent = "" +
     "    <!-- Footer End -->"
 var footer = document.querySelector("#footer");
 footer.insertAdjacentHTML("afterbegin", footerComponent);
+
+/* Get the logoID /
+var logo = document.querySelector(".logo");
+logo.setAttribute("id","logo");*/

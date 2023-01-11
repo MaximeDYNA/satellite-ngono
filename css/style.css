@@ -385,3 +385,12 @@
     padding-right: 0;
     border-right: none;
 }
+/* MY Custom CSS */
+.roadworthiness{
+    text-align: center;
+    margin: 30px;
+}
+
+#logo {
+    width: 55px;
+}

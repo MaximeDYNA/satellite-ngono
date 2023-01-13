@@ -394,3 +394,15 @@
 #logo {
     width: 55px;
 }
+
+.agence {
+    color: black;
+}
+
+.about {
+    color: black;
+}
+
+.description {
+    text-align: justify;
+}

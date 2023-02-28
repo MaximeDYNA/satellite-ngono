@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -348,6 +349,42 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="tab-pane-5">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-6">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -372,34 +409,36 @@
                         <form action="forms.php" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-4">
-                                    <input type="text" class="form-control border-0" placeholder="Nom" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Nom" style="height: 55px;" name="nom" id="nom">
                                 </div>
                                 <div class="col-12 col-sm-4">
-                                    <input type="email" class="form-control border-0" placeholder="Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" placeholder="Email" style="height: 55px;" name="email" id="email">
                                 </div>
                                 <div class="col-12 col-sm-4">
-                                    <input type="tel " class="form-control border-0" placeholder="Téléphone" style="height: 55px;">
+                                    <input type="tel " class="form-control border-0" placeholder="Téléphone" style="height: 55px;" name="tel" id="tel">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
+                                    <select class="form-select border-0" style="height: 55px;" name="agence" id="agence">
+                                        <option selected>Agence de Douala</option>
+                                        <option value="1">Agence de Garoua</option>
+                                        <option value="2">Agence de Yaoundé</option>
+                                        <!--
+                                        <option value="3">Agence de Yaoundé</option>
+                                        -->
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
+                                    <div class="date" id="date1" data-target-input="nearest" id="date">
                                         <input type="text"
                                             class="form-control border-0 datetimepicker-input"
                                             placeholder="Date de réservation" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Demande personnalisée"></textarea>
+                                    <textarea class="form-control border-0" placeholder="Demande personnalisée" id="text"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">Réservez Maintenant</button>
+                                    <button class="btn btn-secondary w-100 py-3" type="submit" id="bouton">Réservez Maintenant</button>
                                 </div>
                             </div>
                         </form>
@@ -559,6 +598,26 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/components.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function Mail(){
+
+            var = name
+
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 </body>
 
 </html>

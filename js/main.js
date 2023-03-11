@@ -108,3 +108,31 @@
     
 })(jQuery);
 
+
+// Form - SMTP manager
+
+function Mail(){
+
+    var name = document.getElementById("nom").value;
+    var email = document.getElementById("email").value;
+    var tel = document.getElementById("tel").value;
+    var agence = document.getElementById("agence").value;
+    var date = document.getElementById("date").value;
+    var text = document.getElementById("text").value;
+    var bouton = document.getElementById("bouton").value;
+
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "jake7andy@gmail.com",
+        Password : "D98BE98AAB37A7333E6DFE64F253F1DBCDC8",
+        To : 'maximedyna@gmail.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
+
+

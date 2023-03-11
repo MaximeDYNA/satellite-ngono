@@ -145,6 +145,8 @@ var footerComponent = "" +
 var footer = document.querySelector("#footer");
 footer.insertAdjacentHTML("afterbegin", footerComponent);
 
-/* Get the logoID /
+// Get the logoID /
+/*
 var logo = document.querySelector(".logo");
-logo.setAttribute("id","logo");*/
+logo.setAttribute("id","logo");
+*/

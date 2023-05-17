@@ -96,11 +96,11 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-/*
+
 .navbar-nav >.nav-item:active{
     color:var(--primary);
 }
- */
+
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
@@ -145,7 +145,36 @@
         opacity: 1;
     }
 }
+.lang-menu {
+    margin-top: 25px;
 
+}
+ .selected-lang {
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+
+ }
+ .selected-lang:before {
+     content: '';
+     display: block;
+     height: 32px;
+     width: 32px;
+     background-image: url(../img/gb.png) ;
+
+ }
+ /*** Language-Select ***/
+select option {
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    font-size: 16px;
+}
+
+select option[data-icon]:before {
+    content: attr(data-icon);
+    margin-right: 8px;
+}
 
 /*** Header ***/
 .carousel-caption {

@@ -111,6 +111,7 @@
 
 // Form - SMTP manager
 
+/*
 function Mail(){
 
     var name = document.getElementById("nom").value;
@@ -135,4 +136,22 @@ function Mail(){
     );
 }
 
+*/
+let lang = "fr";
+
+function updateContent() {
+    fetch(`translations/${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("title").textContent = data.title;
+            document.getElementById("paragraph").textContent = data.paragraph;
+        });
+}
+
+updateContent();
+
+document.getElementById("language-select").addEventListener("change", event => {
+    lang = event.target.value;
+    updateContent();
+});
 

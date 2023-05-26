@@ -100,6 +100,7 @@
                 <a href="about.html" class="nav-item nav-link">A Propos</a>
                 <a href="tarif.html" class="nav-item nav-link">Tarifs</a>
                 <a href="controle.html" class="nav-item nav-link">Contrôle Technique</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <!--
                 <a href="rejoindre.html" class="nav-item nav-link">Nous rejoindre</a>
                 <a href="actualite.html" class="nav-item nav-link">Actualités</a>
@@ -114,15 +115,27 @@
                     </div>
                 </div>
                 -->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <!-- ConveyThis code -->
+                <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", function(e) {
+                        ConveyThis_Initializer.init({
+                            api_key: "pub_dc5999af38eb399d8af757fbdf4cbeb6"
+                        });
+                    });
+                </script>
+                <!-- End ConveyThis code -->
+
             </div>
 
-            <div>
-                <select id="language-select">
-                    <option value="fr" data-icon="🇫🇷">Français</option>
-                    <option value="en" data-icon="🇬🇧">English</option>
-                </select>
-            </div>
+            <!--
+           <div>
+               <select id="language-select">
+                   <option value="fr" data-icon="🇫🇷">Français</option>
+                   <option value="en" data-icon="🇬🇧">English</option>
+               </select>
+           </div>
+           -->
 
             <!--
 
@@ -146,106 +159,124 @@
     <!-- Navbar End -->
 
 
-    <!-- Catégories start -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-1.jpg);">
+        <div class="container-fluid page-header-inner py-5">
+            <div class="container text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Tarifs</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Tarifs</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
-    <div class="container-xxl py-5">
-        <p class="text-center">Les prix suivants ont été homologués par le Ministère des Transports depuis le 1er Juin 2022</p>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-a.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie A</h5>
-                            <p>Taxi / Auto-école</p>
-                            <p>Prix : 4 900 FCFA</p>
-                            <p>Validité : 03 mois</p>
+
+    <!-- Catégories start -->
+    <div>
+        <div class="container-xxl py-4">
+            <p class="text-center">Les prix suivants ont été homologués par le Ministère des Transports depuis le 1er Juin 2022</p>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex py-5 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-a.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie A</h5>
+                                <p>Taxi / Auto-école</p>
+                                <p>Prix : 4 900 FCFA</p>
+                                <p>Validité : 03 mois</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-b.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie B</h5>
-                            <p>Véhicule de tourisme</p>
-                            <p>Prix : 17 900 FCFA</p>
-                            <p>Validité : 12 mois</p>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="d-flex py-5 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-b.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie B</h5>
+                                <p>Véhicule de tourisme</p>
+                                <p>Prix : 17 900 FCFA</p>
+                                <p>Validité : 12 mois</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-b1.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie B1</h5>
-                            <p>Pickup 3,5 T / Véhicules utilitaires légers</p>
-                            <p>Prix : 15 500 FCFA</p>
-                            <p>Validité : 06 mois</p>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex py-5 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-b1.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie B1</h5>
+                                <p>Pickup 3,5 T / Véhicules utilitaires légers</p>
+                                <p>Prix : 15 500 FCFA</p>
+                                <p>Validité : 06 mois</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-xxl py-0">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex py-1 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-c1.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie C < 3,5T </h5>
+                                <p>Mini-bus</p>
+                                <p>Prix : 15 500 FCFA</p>
+                                <p>Validité : 03 mois</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="d-flex py-1 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-c.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie C</h5>
+                                <p>Grand bus / Coaster</p>
+                                <p>Prix : 19 080 FCFA</p>
+                                <p>Validité : 03 mois</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex py-1 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-d.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie D</h5>
+                                <p>Camions / Tracteurs / Sémi-remorques / Véhicules utilitaires lourds</p>
+                                <p>Prix : 26 235 FCFA</p>
+                                <p>Validité : 06 mois</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-0">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex py-5 px-4">
+                            <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-d1.jpg" style="width: 120px; height: 120px;">
+                            <div class="ps-4">
+                                <h5 class="mb-3 agence" >Catégorie D</h5>
+                                <p>Autres engins</p>
+                                <p>Prix : 41 750 FCFA</p>
+                                <p>Validité : 06 mois</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </div>
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-c1.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie C < 3,5T </h5>
-                            <p>Mini-bus</p>
-                            <p>Prix : 15 500 FCFA</p>
-                            <p>Validité : 03 mois</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-c.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie C</h5>
-                            <p>Grand bus / Coaster</p>
-                            <p>Prix : 19 080 FCFA</p>
-                            <p>Validité : 03 mois</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-d.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie D</h5>
-                            <p>Camions / Tracteurs / Sémi-remorques / Véhicules utilitaires lourds</p>
-                            <p>Prix : 26 235 FCFA</p>
-                            <p>Validité : 06 mois</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex py-5 px-4">
-                        <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/categorie-d1.jpg" style="width: 80px; height: 80px;">
-                        <div class="ps-4">
-                            <h5 class="mb-3 agence" >Catégorie D</h5>
-                            <p>Autres engins</p>
-                            <p>Prix : 41 750 FCFA</p>
-                            <p>Validité : 06 mois</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            
-        </div>
+
 
     <!-- Catégories end -->
 
@@ -271,13 +302,13 @@
                         <h4 class="text-light mb-4">Horaires d'ouverture</h4>
                         <h5 class="mb-3 agence text-light" >Agence de Yaoundé</h5>
                         <h6 class="text-light">Lundi - Vendredi: 07H30 - 21H00</h6>
-                        <h6 class="text-light">Samedi: 08H00 - 12H00</h6>
+                        <h6 class="text-light">Samedi et jours fériés: 08H00 - 15H00</h6>
                         <h5 class="mb-3 agence text-light">Agence de Douala</h5>
                         <h6 class="text-light">Lundi - Vendredi: 07H30 - 18H00</h6>
-                        <h6 class="text-light">Samedi: 08H00 - 12H00</h6>
+                        <h6 class="text-light">Samedi et jours fériés: 08H00 - 15H00</h6>
                         <h5 class="mb-3 agence text-light">Agence de Garoua</h5>
                         <h6 class="text-light">Lundi - Vendredi: 07H30 - 17H00</h6>
-                        <h6 class="text-light">Samedi: 08H00 - 12H00</h6>
+                        <h6 class="text-light">Samedi et jours fériés: 08H00 - 15H00</h6>
                     </div>
                     <!--
                     <div class="col-lg-3 col-md-6">

@@ -37,8 +37,8 @@ $mail->SMTPAuth = true;
 $mail->Username = 'dnmj.dev@gmail.com';
 $mail->Password = 'pajqxomnlceeyifb';
 $mail->setFrom($email, $nom);
-$mail->addAddress('maximedyna@gmail.com');
-$mail->Subject = 'Nouveau message de formulaire';
+$mail->addAddress('contact@satellite-ngono.com');
+$mail->Subject = 'Nouveau message de www.satellite-ngono.com';
 $mail->Body = "Bonjour,\n\n";
 $mail->Body .= "Vous avez reçu un nouveau message depuis le formulaire de contact de votre site web.\n\n";
 $mail->Body .= "Nom : " . $nom . "\n";
@@ -46,8 +46,7 @@ $mail->Body .= "Email : " . $email . "\n";
 $mail->Body .= "Téléphone : " . $tel . "\n";
 $mail->Body .= "Objet : " . $objet . "\n";
 $mail->Body .= "Message : " . $message . "\n\n";
-$mail->Body .= "Cordialement,\n";
-$mail->Body .= "SATELLITE NGONO";
+$mail->Body .= "Cordialement, $nom\n";
 //$mail->Body = $message;
 
 // Envoyer l'e-mail
